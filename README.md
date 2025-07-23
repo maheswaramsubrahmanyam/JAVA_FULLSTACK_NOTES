@@ -122,7 +122,7 @@ public static void main(String , args[])
 {
 SSC m = new SSC();
 m.setPassword('133');
-int s = m.getPassword();
+String s = m.getPassword();
 System.out.println(s);
 }
 }
@@ -184,7 +184,7 @@ MARKS m = new SSC();
 
 m.setMarks(95);
 
-String s = m.getMarks();
+int s = m.getMarks();
 
 System.out.println(s);
 
