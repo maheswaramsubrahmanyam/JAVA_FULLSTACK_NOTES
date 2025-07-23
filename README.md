@@ -226,8 +226,41 @@ public int getMarks(){
 }
 ```
 
+---
+# this keyword
+whenever local and instance variables are same there is ambiguity for JVM and expected output will not be achieve and JVM provide default value as output.<br>
+this keyword always refers to current class instance variable 
 
+```
+B.java
 
+package demo; 
+public class B 
+{
+ int marks;
+void add(int marks)
+  {
+   this.marks = marks;
+   sub();
+  }
+  void sub() 
+  {
+   System.out.println(marks);
+  }
+}
+```
+
+```
+package demo;
+public class A
+{
+  public static void main(string , args[])
+   {
+    B b= new B();
+    b.add(99);
+   }
+}
+```
 
 
 
