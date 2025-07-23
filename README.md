@@ -227,6 +227,9 @@ public int getMarks(){
 ```
 
 ---
+# use of this keyword in java?
+# difference b/w this keyword and this() constructor call?
+
 # this keyword
 whenever local and instance variables are same there is ambiguity for JVM and expected output will not be achieve and JVM provide default value as output.<br>
 this keyword always refers to current class instance variable 
@@ -261,6 +264,11 @@ public class A
    }
 }
 ```
+# this VS this() 
+
+- this is a keyword it is used to refer current class instance variables 
+- this() constructor it is used to call from one constructor to another
+
 
 
 
