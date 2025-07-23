@@ -104,6 +104,66 @@ SBI(String str)
 }
 ```
 ---
+Encapsulation in java
+
+my making variable as private and using set and get method
+
+
+
+```
+MAHESH.java
+
+package bankApp
+
+public class MAHESH
+{
+
+public static void main(String , args[])
+{
+SSC m = new SSC();
+m.setPassword('133');
+String s = m.getPassword();
+System.out.println(s);
+}
+}
+```
+
+
+
+---
+
+
+
+```
+SSC.java
+
+package bankApp
+
+public class SSC
+{
+
+String password;
+Public void setPassword(String s)  {
+     password = s;
+  }
+public String getPassword(){
+
+    return password;
+
+}
+}
+```
+
+# Use of Encapsulation 
+
+- used for data security
+
+
+## Encapsulation in Java
+- Wrapping up data and methods acting on that data in a single unit 
+
+
+
 
 
 
