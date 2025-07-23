@@ -106,7 +106,7 @@ SBI(String str)
 ---
 # Encapsulation in java
 
-my making variable as private and using set and get method
+By making variable as private and using set and get method
 
 
 
