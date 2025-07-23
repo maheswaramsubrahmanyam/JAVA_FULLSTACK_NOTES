@@ -142,7 +142,7 @@ package bankApp
 public class SSC
 {
 
-String password;
+private String password;
 Public void setPassword(String s)  {
      password = s;
   }
@@ -162,7 +162,69 @@ public String getPassword(){
 ## Encapsulation in Java
 - Wrapping up data and methods acting on that data in a single unit 
 
+```
 
+SCORE.java
+
+
+
+package marksApp
+
+
+
+public class SCORE
+
+{
+
+public static void main(String , args\[])
+
+{
+
+MARKS m = new SSC();
+
+m.setMarks(95);
+
+String s = m.getMarks();
+
+System.out.println(s);
+
+}
+}
+
+```
+
+---
+
+```
+
+MARKS.java
+
+package bankApp
+
+public class MARKS
+
+{
+
+
+
+private int marks;
+
+Public void setMarks(int s)  {
+
+     marks = s;
+
+  }
+
+public int getMarks(){
+
+
+   return marks;
+
+
+}
+
+}
+```
 
 
 
