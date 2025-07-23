@@ -122,7 +122,7 @@ public static void main(String , args[])
 {
 SSC m = new SSC();
 m.setPassword('133');
-String s = m.getPassword();
+int s = m.getPassword();
 System.out.println(s);
 }
 }
