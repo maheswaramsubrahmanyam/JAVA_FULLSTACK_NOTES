@@ -561,11 +561,41 @@ public class Demo1 extends Demo
 
 ```
 
+# static block vs instance block 
+static block will be excuted automatically during class loading before objcet creation 
 
+```java
+// Demo.java
+package p1;
+public class Demo
+{
+   {
+     System.out.println("Static Block");
+   }
+   static
+   {
+     System.out.println("Static block1 ");
+    }
+    static
+   {
+     System.out.println("Static block2 ");
+    }
 
+}
+```
 
+```java
+//Demo1.java
+package p1;
 
-
+public class Demo1 extends Demo
+{
+  public static void main(String[] args)
+  {
+   Demo d = new Demo();
+  }
+}
+```
 
 
 
