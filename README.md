@@ -416,7 +416,7 @@ System.out.println(a - b);
 }
 ```
 ---
-<pre>
+
 ```
 D.java
 package demo;
@@ -429,7 +429,6 @@ b.add();
 }
 }
 ```
-</pre>
 
 
 
