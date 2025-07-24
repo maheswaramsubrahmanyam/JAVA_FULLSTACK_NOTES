@@ -14,9 +14,9 @@ objects stored in heap area initization of objects   <br>
 using reference variable
 
 ```java
-CUSTOMER.java
+//CUSTOMER.java
 
-package bankApp
+package bankApp;
 
 public class CUSTOMER 
 {
@@ -35,9 +35,9 @@ System.out.println(s2.password);
 ---
 
 ```java
-SBI.java 
+//SBI.java 
 
-package bankApp
+package bankApp;
 
 public class SBI
 {
@@ -55,11 +55,11 @@ String password;
 
 ```java
 
-CUSTOMER.java
+//CUSTOMER.java
 
 
 
-package bankApp
+package bankApp;
 
 
 
@@ -89,9 +89,9 @@ System.out.println(s2.password);
 ---
 
 ```java
-SBI.java
+//SBI.java
 
-package bankApp
+package bankApp;
 
 public class SBI
 {
@@ -111,9 +111,9 @@ By making variable as private and using set and get method
 
 
 ```java
-MAHESH.java
+//MAHESH.java
 
-package bankApp
+package bankApp;
 
 public class MAHESH
 {
@@ -135,9 +135,9 @@ System.out.println(s);
 
 
 ```java
-SSC.java
+//SSC.java
 
-package bankApp
+package bankApp;
 
 public class SSC
 {
@@ -154,10 +154,6 @@ public String getPassword(){
 }
 ```
 
-
-
-
-
 ---
 # use of this keyword in java?
 # difference b/w this keyword and this() constructor call?
@@ -167,7 +163,7 @@ whenever local and instance variables are same there is ambiguity for JVM and ex
 this keyword always refers to current class instance variable 
 
 ```java
-B.java
+//B.java
 
 package demo; 
 public class B 
@@ -225,13 +221,8 @@ public class A
 
 ```java
 
-SCORE.java
-
-
-
-package marksApp
-
-
+//SCORE.java
+package marksApp;
 
 public class SCORE
 
@@ -258,15 +249,13 @@ System.out.println(s);
 
 ```java
 
-MARKS.java
+//MARKS.java
 
-package bankApp
+package bankApp;
 
 public class MARKS
 
 {
-
-
 
 private int marks;
 
@@ -278,9 +267,7 @@ Public void setMarks(int s)  {
 
 public int getMarks(){
 
-
    return marks;
-
 
 }
 
@@ -291,7 +278,7 @@ public int getMarks(){
 # inhertance 
 
 ```java
-A.java
+//A.java
 
 package demo;
 
@@ -309,7 +296,7 @@ void add(){
 ---
 
 ```java
-B.java
+//B.java
 
 package demo;
 public class B extend A {
@@ -324,7 +311,7 @@ int b = 20;
 ---
 
 ```java
-C.java
+//C.java
 package demo;
 public class c {
 
@@ -371,7 +358,7 @@ Class B extends A {
 Class which extends a class and that class is further extended by another class is called as multi level inheritance 
 
 ```java
-A.java
+//A.java
 
 package demo;
 
@@ -389,7 +376,7 @@ void add(){
 ---
 
 ```java
-B.java
+//B.java
 
 package demo;
 public class B extend A {
@@ -418,7 +405,7 @@ System.out.println(a - b);
 ---
 
 ```java
-D.java
+//D.java
 package demo;
 public class D {
 
