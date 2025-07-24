@@ -13,7 +13,7 @@ objects stored in heap area initization of objects   <br>
  <br>
 using reference variable
 
-```
+```java
 CUSTOMER.java
 
 package bankApp
@@ -34,7 +34,7 @@ System.out.println(s2.password);
 ```
 ---
 
-```
+```java
 SBI.java 
 
 package bankApp
@@ -53,7 +53,7 @@ String password;
 
 
 
-```
+```java
 
 CUSTOMER.java
 
@@ -88,7 +88,7 @@ System.out.println(s2.password);
 
 ---
 
-```
+```java
 SBI.java
 
 package bankApp
@@ -110,7 +110,7 @@ By making variable as private and using set and get method
 
 
 
-```
+```java
 MAHESH.java
 
 package bankApp
@@ -134,7 +134,7 @@ System.out.println(s);
 
 
 
-```
+```java
 SSC.java
 
 package bankApp
@@ -166,7 +166,7 @@ public String getPassword(){
 whenever local and instance variables are same there is ambiguity for JVM and expected output will not be achieve and JVM provide default value as output.<br>
 this keyword always refers to current class instance variable 
 
-```
+```java
 B.java
 
 package demo; 
@@ -185,7 +185,7 @@ void add(int marks)
 }
 ```
 
-```
+```java
 package demo;
 public class A
 {
@@ -223,7 +223,7 @@ public class A
 ## Encapsulation in Java
 - Wrapping up data and methods acting on that data in a single unit 
 
-```
+```java
 
 SCORE.java
 
@@ -256,7 +256,7 @@ System.out.println(s);
 
 ---
 
-```
+```java
 
 MARKS.java
 
@@ -290,7 +290,7 @@ public int getMarks(){
 
 # inhertance 
 
-```
+```java
 A.java
 
 package demo;
@@ -308,7 +308,7 @@ void add(){
 ```
 ---
 
-```
+```java
 B.java
 
 package demo;
@@ -323,7 +323,7 @@ int b = 20;
 ```
 ---
 
-```
+```java
 C.java
 package demo;
 public class c {
@@ -346,7 +346,7 @@ b.add();
 getting proporties and methods from parant class to child class is called single inheritance 
 
 ### syntax 
-```
+```java
 Class A {
    variables
    method1(){
@@ -370,7 +370,7 @@ Class B extends A {
 
 Class which extends a class and that class is further extended by another class is called as multi level inheritance 
 
-```
+```java
 A.java
 
 package demo;
@@ -388,7 +388,7 @@ void add(){
 ```
 ---
 
-```
+```java
 B.java
 
 package demo;
@@ -402,7 +402,7 @@ System.out.println(a * b);
 ```
 ---
 
-```
+```java
 C.java
 
 package demo;
@@ -417,7 +417,7 @@ System.out.println(a - b);
 ```
 ---
 
-```
+```java
 D.java
 package demo;
 public class D {
@@ -484,7 +484,7 @@ Can have different return types (but not only return type)
 
 ### Example:
 
-```
+```java
 class Calculator {
     int add(int a, int b) {
         return a + b;
@@ -519,7 +519,7 @@ Method Overriding allows a subclass to provide a specific implementation of a me
 > Cannot override final or static methods
 
 ### Example:
-```
+```java
 class Animal {
     void sound() {
         System.out.println("Animal makes sound");
