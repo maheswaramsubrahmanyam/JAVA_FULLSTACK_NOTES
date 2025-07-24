@@ -528,6 +528,38 @@ public class Main {
 }
 ```
 
+# instance block
+
+instance block called automatically during object creation before constructor call 
+```java
+// Demo.java
+package p1;
+public class Demo {
+ void add(){
+  System.out.println("Method");
+  }
+  Demo(){
+  System.out.println("Constructor");
+  }
+  // instance block
+  {
+   System.out.println("Instance block");
+   }
+```
+```java
+//
+package p1;
+public class Demo1 extends Demo
+{
+ public static void main(String[] args){
+   Demo d = new Demo();
+   d.add();
+
+}
+}
+
+
+```
 
 
 
