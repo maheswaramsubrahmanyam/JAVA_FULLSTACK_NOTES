@@ -663,6 +663,35 @@ public class Demo
 
 }
 ```
+---
+# private method cannot me overrided
+
+```java
+// Demo.java
+package firstAPP;
+public class Demo
+{
+  private void m1()
+   {
+     System.out.println("Method 2");
+   }
+   
+
+}
+```
+```java
+package firstAPP;
+
+//Demo1.java
+
+public class Demo1 extends Demo
+{
+   void m1() {
+	  System.out.println("Method 1");
+  }
+}
+```
+
 
 
 
