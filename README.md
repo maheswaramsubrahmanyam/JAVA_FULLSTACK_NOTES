@@ -932,4 +932,6 @@ public class Demo2 extends Demo //error {
 
 - constructor cannot be made as final but we can make it as private
 - when constructor made as private we cannot be create objects for that class
+- we cannot make class as private and protected but we can make class as default and public
+- 
 
