@@ -862,7 +862,7 @@ public  class Demo2 {
 	   }
 }
 ```
-# final keyword in java 
+# final variable keyword in java 
 when final keyword is used with variable that variable value will be constant and can`not be changed or updated 
 
 ```java
@@ -880,8 +880,55 @@ public class Demo
 
 }
 ```
+# final  method
+when final keyword is used with method that method will be constant and cannot be overrided 
 
 
+```java
+// Demo.java
+package firstAPP;
+public class Demo
+{
+  final void add()
+   {
+     int a = 100;
+     System.out.println(a);
+   }
+   
+
+}
+```
+# final class
+when final keyword uded with class that class cannot be extended 
+
+```java
+// Demo.java
+package firstAPP;
+public final class Demo
+{
+   void add()
+   {
+     int a = 100;
+     System.out.println(a);
+   }
+   
+
+}
+```
+
+```java
+package firstAPP;
+
+public class Demo2 extends Demo //error {
+	
+	public static void main(String[] args)
+           {
+            Demo d = new Demo1();
+            d.add();
+           }
+}
+
+```
 
 
 
