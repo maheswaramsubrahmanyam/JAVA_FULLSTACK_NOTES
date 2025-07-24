@@ -693,6 +693,47 @@ public class Demo1 extends Demo
 ```
 
 
+# ststic menthod cannot be overided it is called method hiding 
+
+```java
+package firstAPP;
+
+//Demo1.java
+
+public class Demo1 extends Demo
+{
+   static void m1() {
+	  System.out.println("Method 1");
+  }
+}
+
+```
+```java
+// Demo.java
+package firstAPP;
+public class Demo
+{
+  static void m1()
+   {
+     System.out.println("Method 2");
+   }
+   
+
+}
+```
+```java
+package firstAPP;
+
+public class Demo2 {
+	
+	public static void main(String[] args) 
+		{
+			Demo d = new Demo1();
+			d.m1();
+		
+	   }
+}
+```
 
 
 
