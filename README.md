@@ -157,6 +157,64 @@ public String getPassword(){
 
 
 
+
+---
+# use of this keyword in java?
+# difference b/w this keyword and this() constructor call?
+
+# this keyword
+whenever local and instance variables are same there is ambiguity for JVM and expected output will not be achieve and JVM provide default value as output.<br>
+this keyword always refers to current class instance variable 
+
+```
+B.java
+
+package demo; 
+public class B 
+{
+ int marks;
+void add(int marks)
+  {
+   this.marks = marks;
+   sub();
+  }
+  void sub() 
+  {
+   System.out.println(marks);
+  }
+}
+```
+
+```
+package demo;
+public class A
+{
+  public static void main(string , args[])
+   {
+    B b= new B();
+    b.add(99);
+   }
+}
+```
+# this VS this() 
+
+- this is a keyword it is used to refer current class instance variables 
+- this() constructor it is used to call from one constructor to another
+
+# 4 pilers of oops?
+
+
+
+- class and object
+
+- inheritance 
+
+- polymorphism
+
+- abstraction 
+
+- encapsulation 
+
 # Use of Encapsulation 
 
 - used for data security
@@ -229,51 +287,6 @@ public int getMarks(){
 }
 ```
 
----
-# use of this keyword in java?
-# difference b/w this keyword and this() constructor call?
-
-# this keyword
-whenever local and instance variables are same there is ambiguity for JVM and expected output will not be achieve and JVM provide default value as output.<br>
-this keyword always refers to current class instance variable 
-
-```
-B.java
-
-package demo; 
-public class B 
-{
- int marks;
-void add(int marks)
-  {
-   this.marks = marks;
-   sub();
-  }
-  void sub() 
-  {
-   System.out.println(marks);
-  }
-}
-```
-
-```
-package demo;
-public class A
-{
-  public static void main(string , args[])
-   {
-    B b= new B();
-    b.add(99);
-   }
-}
-```
-# this VS this() 
-
-- this is a keyword it is used to refer current class instance variables 
-- this() constructor it is used to call from one constructor to another
-
-
-
 
 # inhertance 
 
@@ -314,10 +327,42 @@ package demo;
 public class c {
 
 
-public static void main(String[] , args){
+public static void main(String[]  args){
 B b = new B();
 b.add();
 }
+}
+```
+
+# types of inheritances 
+- single Inheritance
+- multilevel Inheritance
+- multiple Inheritance
+- Hybrid Inheritance
+- Heirichal Inheritance
+
+# Single Inheritance 
+getting proporties and methods from parant class to child class is called single inheritance 
+
+### syntax 
+```
+Class A {
+   variables
+   method1(){
+    // block of code
+   }
+   method2(){
+    // block of code
+   }
+}
+Class B extends A {
+   variables
+   method3(){
+    // block of code
+   }
+   method4(){
+    // block of code
+   }
 }
 ```
 
