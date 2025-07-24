@@ -366,6 +366,69 @@ Class B extends A {
    }
 }
 ```
+# Multilevel Inheritance
+
+Class which extends a class and that class is further extended by another class is called as multi level inheritance 
+
+```
+A.java
+
+package demo;
+
+public class A
+{
+
+void add(){
+ int a=10;
+ int b = 20;
+ System.out.println(a+b);
+}
+
+}
+```
+---
+
+```
+B.java
+
+package demo;
+public class B extend A {
+void mul(){
+int a = 10;
+int b= 20;
+System.out.println(a * b);
+}
+}
+```
+---
+
+```
+C.java
+
+package demo;
+public class C extend B {
+
+void sub(){
+int a = 10;
+int b= 20;
+System.out.println(a - b);
+}
+}
+```
+---
+
+```
+D.java
+package demo;
+public class D {
+
+
+public static void main(String[]  args){
+C b = new C();
+b.add();
+}
+}
+```
 
 
 
