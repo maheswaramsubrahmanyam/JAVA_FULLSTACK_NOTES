@@ -154,6 +154,9 @@ public String getPassword(){
 }
 ```
 
+
+
+
 # Use of Encapsulation 
 
 - used for data security
@@ -268,6 +271,60 @@ public class A
 
 - this is a keyword it is used to refer current class instance variables 
 - this() constructor it is used to call from one constructor to another
+
+
+
+
+# inhertance 
+
+```
+A.java
+
+package demo;
+
+public class A
+{
+
+void add(){
+ int a=10;
+ int b = 20;
+ return a+b;
+}
+
+}
+```
+---
+
+```
+B.java
+
+package demo;
+public class B extend A {
+
+void mul(){
+ return a*b;
+}
+}
+```
+---
+
+```
+C.java
+package demo;
+public class c {
+
+
+public static void main(String[] , args){
+B b = new B();
+b.add();
+}
+}
+```
+
+
+
+
+
 
 
 
