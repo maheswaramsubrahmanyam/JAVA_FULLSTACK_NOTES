@@ -862,6 +862,26 @@ public  class Demo2 {
 	   }
 }
 ```
+# final keyword in java 
+when final keyword is used with variable that variable value will be constant and can`not be changed or updated 
+
+```java
+// Demo.java
+package firstAPP;
+public class Demo
+{
+   void add()
+   {
+	   final int a = 100;
+	   a = 300; // error bcz final vaiable cannot be chnanged 
+     System.out.println(a);
+   }
+   
+
+}
+```
+
+
 
 
 
