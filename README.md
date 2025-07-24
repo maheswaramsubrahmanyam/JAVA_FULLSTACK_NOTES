@@ -596,8 +596,73 @@ public class Demo1 extends Demo
   }
 }
 ```
+# instance block are used to initlizes instace variables and stactic blocks are used to initlize static variables 
+```java
+// Demo.java
+package p1;
+public class Demo
+{
+  int a;
+  static int b;
+   {
+     a=100;
+   }
+   static
+   {
+     b=200;
+    }
+    void
+   {
+     System.out.println(a);
+     System.out.println(b);
+    }
 
+}
+```
 
+```java
+//Demo1.java
+package p1;
+
+public class Demo1 extends Demo
+{
+  public static void main(String[] args)
+  {
+   Demo d = new Demo();
+   d.show();
+  }
+}
+```
+--- 
+```java
+package firstAPP;
+
+//Demo1.java
+
+public class Demo1 extends Demo
+{
+  public static void main(String[] args)
+  {
+   Demo d = new Demo();
+   Demo d1 = new Demo();
+   Demo d2 = new Demo();
+  }
+}
+```
+
+```java
+// Demo.java
+package firstAPP;
+public class Demo
+{
+  
+   {
+     System.out.println("instance blcok");
+   }
+   
+
+}
+```
 
 
 
