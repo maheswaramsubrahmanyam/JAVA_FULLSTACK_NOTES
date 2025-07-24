@@ -736,6 +736,132 @@ public class Demo2 {
 ```
 
 
+# final method cannot be overrided 
+```java
+// Demo.java
+package firstAPP;
+public class Demo
+{
+  final void m1()
+   {
+     System.out.println("Method 2");
+   }
+   
+
+}
+```
+```java
+package firstAPP;
+
+//Demo1.java
+
+public class Demo1 extends Demo
+{
+    void m1() {
+	  System.out.println("Method 1");
+  }
+}
+
+```
+```java
+package firstAPP;
+
+public class Demo2 {
+	
+	public static void main(String[] args) 
+		{
+			Demo d = new Demo1();
+			d.m1();
+		
+	   }
+}
+
+```
+# child class method access >= parent class method access 
+# public >= public true
+# default >= public false
+
+```java
+// Demo.java
+package firstAPP;
+public class Demo
+{
+  public void m1()
+   {
+     System.out.println("Method 2");
+   }
+   
+
+}
+```
+```java
+package firstAPP;
+
+//Demo1.java
+
+public class Demo1 extends Demo
+{
+     void m1() {
+	  System.out.println("Method 1");
+  }
+}
+
+```
+```java
+package firstAPP;
+
+public class Demo2 {
+	
+	public static void main(String[] args) 
+		{
+			Demo d = new Demo1();
+			d.m1();
+		
+	   }
+}
+```
+# protected >= public 
+
+
+```java
+// Demo.java
+package firstAPP;
+public class Demo
+{
+  protected void m1()
+   {
+     System.out.println("Method 2");
+   }
+   
+
+}
+```
+```java
+package firstAPP;
+
+//Demo1.java
+
+public class Demo1 extends Demo
+{
+     void m1() {
+	  System.out.println("Method 1");
+  }
+}
+
+```
+```java
+package firstAPP;
+
+public  class Demo2 {
+	
+	public static void main(String[] args) 
+		{
+			Demo d = new Demo1();
+			d.m1();
+		
+	   }
+}
+```
 
 
 
