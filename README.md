@@ -301,7 +301,7 @@ public class A
 void add(){
  int a=10;
  int b = 20;
- return a+b;
+ System.out.println(a+b);
 }
 
 }
@@ -315,7 +315,9 @@ package demo;
 public class B extend A {
 
 void mul(){
- return a*b;
+int a = 10;
+int b = 20;
+ System.out.println(a*b);
 }
 }
 ```
@@ -325,7 +327,6 @@ void mul(){
 C.java
 package demo;
 public class c {
-
 
 public static void main(String[]  args){
 B b = new B();
