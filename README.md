@@ -429,7 +429,116 @@ b.add();
 }
 }
 ```
+# why Multiple Inheritance not possible in Java with class
 
+becouse of ambiguty problem multiple inheritance is not supported 
+> to achive multiple inheritance we use Interfaces consepts
+
+# hirichical 
+# Java Inheritance & Polymorphism Notes
+
+##  Hierarchical Inheritance in Java
+
+Hierarchical inheritance occurs when **multiple subclasses inherit** from a **single superclass**.
+
+###  Example:
+
+```java
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+    void meow() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.eat();
+        d.bark();
+
+        Cat c = new Cat();
+        c.eat();
+        c.meow();
+    }
+}
+```
+# Method Overloading (Compile-Time Polymorphism)
+ Method Overloading means defining multiple methods with the same name but different parameters (type, number, or order) within the same class.
+
+## Rules:
+Must differ in parameter list
+
+Can have different return types (but not only return type)
+
+### Example:
+
+```
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator c = new Calculator();
+        System.out.println(c.add(5, 10));
+        System.out.println(c.add(5.5, 3.3));
+        System.out.println(c.add(1, 2, 3));
+    }
+}
+```
+# Method Overriding (Run-Time Polymorphism)
+Method Overriding allows a subclass to provide a specific implementation of a method already defined in its superclass.
+
+## Rules:
+- Must have same method name, return type, and parameters
+
+> Must be in subclass
+
+> Cannot override final or static methods
+
+### Example:
+```
+class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Dog();  // Upcasting
+        a.sound();             // Calls Dog's sound()
+    }
+}
 
 
 
