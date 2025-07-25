@@ -1080,14 +1080,14 @@ int[][] matrix = {
 System.out.println(matrix[1][2]); // prints 6
 ```
 # Common Operations:
-- array.length
-- - returns the size of the array.
+> array.length
+>> returns the size of the array.
 
-- Arrays.sort(array)
-- – sorts the array (needs import java.util.Arrays;).
+> Arrays.sort(array)
+>> sorts the array (needs import java.util.Arrays;).
 
-- array.clone()
-- – returns a copy of the array.
+> array.clone()
+>> returns a copy of the array.
 
 ## Example Program:
 ```java
