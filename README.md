@@ -1018,3 +1018,83 @@ public static void main(String[] args) {
 
     
 ```
+
+# Arrays in Java
+## What is an Array?
+An array in Java is a container object that holds a fixed number of values of the same type. It's used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
+# Features:
+- Arrays are fixed in size.
+- All elements must be of the same data type.
+- Elements are stored in contiguous memory locations.
+- Indexing starts from 0.
+- Declaration and Initialization:
+```java
+
+int[] numbers; // declaration
+numbers = new int[5]; // memory allocation
+
+// initialization
+numbers[0] = 10;
+numbers[1] = 20;
+numbers[2] = 30;
+numbers[3] = 40;
+numbers[4] = 50;
+
+// or declare and initialize together
+int[] numbers = {10, 20, 30, 40, 50};
+```
+
+# Accessing Elements:
+
+```java
+
+System.out.println(numbers[2]); // prints 30
+```
+# Looping Through Arrays:
+```java
+
+// using traditional for loop
+for (int i = 0; i < numbers.length; i++) {
+    System.out.println(numbers[i]);
+}
+
+// using enhanced for loop
+for (int num : numbers) {
+    System.out.println(num);
+}
+```
+# Types of Arrays:
+- One-Dimensional Array – a simple list of elements.
+
+- Multi-Dimensional Array – an array of arrays.
+
+## Example of a two-dimensional array:
+
+```java
+
+int[][] matrix = {
+    {1, 2, 3},
+    {4, 5, 6}
+};
+System.out.println(matrix[1][2]); // prints 6
+Common Operations:
+array.length – returns the size of the array.
+
+Arrays.sort(array) – sorts the array (needs import java.util.Arrays;).
+
+array.clone() – returns a copy of the array.
+```
+## Example Program:
+```java
+
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] marks = {90, 80, 85, 70, 95};
+
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println("Mark " + (i + 1) + ": " + marks[i]);
+        }
+    }
+}
+```
