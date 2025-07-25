@@ -1084,7 +1084,7 @@ System.out.println(matrix[1][2]); // prints 6
 >> returns the size of the array.
 
 > Arrays.sort(array)
-  - sorts the array (needs import java.util.Arrays;).
+>> sorts the array (needs import java.util.Arrays;).
 
 > array.clone()
 >> returns a copy of the array.
