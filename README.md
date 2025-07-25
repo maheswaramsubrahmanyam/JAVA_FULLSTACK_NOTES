@@ -1157,3 +1157,28 @@ After nextInt(), if you read nextLine(), you need to clear the buffer:
 sc.nextLine(); // Consume the leftover newline
 ```
 
+# even or odd program
+```java
+package firstAPP;
+
+import java.util.Scanner;
+
+public class B {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your num: ");
+        int num = sc.nextInt();
+
+        
+        if (num%2 ==0) {
+        	    System.out.println("even");
+        }
+        else {
+            System.out.println("Odd");
+
+        }
+    }
+}
+```
+
