@@ -933,5 +933,88 @@ public class Demo2 extends Demo //error {
 - constructor cannot be made as final but we can make it as private
 - when constructor made as private we cannot be create objects for that class
 - we cannot make class as private and protected but we can make class as default and public
-- 
 
+# abstraction 
+the methods which are having method bodys are called as concrate methods 
+## abstract method 
+the methods which are dont have method body are called as abstract methods if the method dones't have method body that method should be declared using absctarct keyword 
+
+
+
+```java
+package SBIBankAccountSystem;
+
+public class BankAccount {
+    private String accountNumber;
+    private String accountHolder;
+    private double balance;
+
+    
+    public BankAccount(String accountNumber, String accountHolder, double balance) {
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountHolder() {
+        return accountHolder;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public void setAccountHolder(String accountHolder) {
+        this.accountHolder = accountHolder;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: " + amount);
+        } else if (amount <= 0) {
+            System.out.println("Invalid deposit amount.");
+        }
+    }
+
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawn: " + amount);
+        } else if (amount <= 0) {
+            System.out.println("Insufficient balance.");
+        }
+            
+    }
+public static void main(String[] args) {
+        
+        BankAccount account = new BankAccount("123456789SBI", "Maheswaram Subrahmanyam", 11000.0);
+        System.out.println("Account Number: " + account.getAccountNumber());
+        System.out.println("Account Holder: " + account.getAccountHolder());
+        System.out.println("Initial Balance: "  + account.getBalance());
+
+        account.deposit(5868.0);
+        System.out.println("Balance after deposit: " + account.getBalance());
+        account.withdraw(2890.0);
+        System.out.println("Balance after withdrawal: " + account.getBalance());
+        account.withdraw(2000.0);
+        System.out.println("Balance after withdrawal: " + account.getBalance());
+
+    }
+}
+
+
+    
+```
