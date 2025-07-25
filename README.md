@@ -1157,13 +1157,3 @@ After nextInt(), if you read nextLine(), you need to clear the buffer:
 sc.nextLine(); // Consume the leftover newline
 ```
 
-
-
-
-
-
-
-
-
-Ask ChatGPT
-
