@@ -1102,3 +1102,61 @@ public class ArrayExample {
     }
 }
 ```
+# Import Scanner Class:
+```java
+
+import java.util.Scanner;
+```
+#  Create Scanner Object:
+```java
+
+Scanner sc = new Scanner(System.in);
+```
+| Data Type     | Syntax Example                     |
+|---------------|------------------------------------|
+| String (word) | `String name = sc.next();`         |
+| String (line) | `String line = sc.nextLine();`     |
+| Integer       | `int num = sc.nextInt();`          |
+| Float         | `float f = sc.nextFloat();`        |
+| Double        | `double d = sc.nextDouble();`      |
+| Long          | `long l = sc.nextLong();`          |
+| Boolean       | `boolean b = sc.nextBoolean();`    |
+
+
+## Example Program:
+```java
+
+import java.util.Scanner;
+
+public class InputExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        System.out.println("Hello " + name + ", you are " + age + " years old.");
+    }
+}
+```
+# Common Mistake Tip:
+After nextInt(), if you read nextLine(), you need to clear the buffer:
+
+```java
+
+sc.nextLine(); // Consume the leftover newline
+```
+
+
+
+
+
+
+
+
+
+Ask ChatGPT
+
