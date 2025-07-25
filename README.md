@@ -1126,9 +1126,11 @@ Scanner sc = new Scanner(System.in);
 ## Example Program:
 ```java
 
+package firstAPP;
+
 import java.util.Scanner;
 
-public class InputExample {
+public class B {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -1137,8 +1139,13 @@ public class InputExample {
 
         System.out.print("Enter your age: ");
         int age = sc.nextInt();
+        if (age >18) {
+        	    System.out.println("Hello " + name + ", you are " + age + " and you are elgible for vote.");
+        }
+        else {
+            System.out.println("Hello " + name + ", you are " + age + " so you are not elgible for Vote.");
 
-        System.out.println("Hello " + name + ", you are " + age + " years old.");
+        }
     }
 }
 ```
