@@ -1183,14 +1183,14 @@ public class B {
 ```
 ### if a constant value starts with 0B
 - 0B binary so later it will convert into decimal
->> the base value of Binary is 2
->> the constant in Binary form only 0 and 1 numbers are allowed
+> the base value of Binary is 2
+> the constant in Binary form only 0 and 1 numbers are allowed
 
 ### if a constant value starts with 0  
 - That constant is in octale later it will be converted to decimal
->> the base value of octal is 8
->> the constant in octale form only 0 to 7 numbers are allowed
+> the base value of octal is 8
+> the constant in octale form only 0 to 7 numbers are allowed
 ### if a constant value starts with 0X
 - That constant is in HexaDecimal later it iwll be converted to decimal
->> the base value of HexaDecimal is 16
->> the constant in HexaDecimal form only 0 to 10 and A to F numbers are allowed
+> the base value of HexaDecimal is 16
+> the constant in HexaDecimal form only 0 to 10 and A to F numbers are allowed
