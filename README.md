@@ -1194,3 +1194,103 @@ public class B {
 - That constant is in HexaDecimal later it iwll be converted to decimal
 > the base value of HexaDecimal is 16
 > the constant in HexaDecimal form only 0 to 10 and A to F numbers are allowed
+
+
+
+# Java Exception Handling Notes
+
+##  What is an Exception?
+An **exception** is an event that disrupts the normal flow of a program’s instructions during runtime.
+
+###  Types of Errors
+- **Compile-time errors** – Detected during compilation (e.g., syntax errors)
+- **Runtime errors** – Occur during execution (e.g., division by zero)
+
+---
+
+##  Types of Exceptions in Java
+
+| Category           | Examples                        | Description                                |
+|--------------------|----------------------------------|--------------------------------------------|
+| **Checked**        | `IOException`, `SQLException`   | Must be handled at compile time            |
+| **Unchecked**      | `NullPointerException`, `ArithmeticException` | Occur at runtime and not enforced by compiler |
+| **Error**          | `OutOfMemoryError`, `StackOverflowError` | Serious issues, not typically handled       |
+
+---
+
+##  Exception Hierarchy
+
+```text
+java.lang.Object
+   ↳ java.lang.Throwable
+       ↳ java.lang.Exception (checked)
+           ↳ java.lang.RuntimeException (unchecked)
+       ↳ java.lang.Error
+```
+
+---
+
+##  Handling Exceptions
+
+### `try-catch-finally` block
+
+```java
+try {
+    // Code that may throw an exception
+} catch (ExceptionType e) {
+    // Handler logic
+} finally {
+    // Clean-up code
+}
+```
+
+### `throws` keyword
+
+```java
+public void readFile() throws IOException {
+    // Method declaring a checked exception
+}
+```
+
+### `throw` keyword
+
+```java
+throw new ArithmeticException("Cannot divide by zero");
+```
+
+---
+
+## Multiple Catch Blocks
+
+```java
+try {
+    // Risky code
+} catch (IOException e) {
+    // Handle I/O issues
+} catch (NullPointerException e) {
+    // Handle null issues
+}
+```
+
+---
+
+##  Custom Exceptions
+
+```java
+class MyCustomException extends Exception {
+    public MyCustomException(String message) {
+        super(message);
+    }
+}
+```
+
+---
+
+##  Best Practices
+
+- Catch **specific exceptions** before generic ones
+- Use **finally blocks** for cleanup
+- Avoid catching `Exception` or `Throwable` unless necessary
+- Keep exception messages **clear and informative**
+
+---
