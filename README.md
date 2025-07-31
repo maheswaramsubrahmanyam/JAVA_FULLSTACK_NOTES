@@ -1294,3 +1294,92 @@ class MyCustomException extends Exception {
 - Keep exception messages **clear and informative**
 
 ---
+#  Java `LinkedList` - Methods, Syntax & Example
+
+Java provides the `LinkedList` class in the `java.util` package. It implements both **List** and **Deque** interfaces and allows for **fast insertions/deletions**, unlike `ArrayList`.
+
+---
+
+##  Import Statement
+
+```java
+import java.util.LinkedList;
+```
+# Common `LinkedList` Methods with Syntax
+| Method                | Description                              | Syntax Example              |
+| --------------------- | ---------------------------------------- | --------------------------- |
+| `add(E e)`            | Adds element to the end                  | `list.add("A");`            |
+| `add(int index, E e)` | Adds element at a specified position     | `list.add(1, "B");`         |
+| `push(E e)`           | Pushes element at the front (stack-like) | `list.push("Start");`       |
+| `pop()`               | Removes and returns the first element    | `String item = list.pop();` |
+| `remove()`            | Removes the first element                | `list.remove();`            |
+| `remove(int index)`   | Removes element at index                 | `list.remove(2);`           |
+| `get(int index)`      | Gets the element at index                | `String val = list.get(1);` |
+| `size()`              | Returns the number of elements           | `int size = list.size();`   |
+| `contains(Object o)`  | Checks if element exists                 | `list.contains("X");`       |
+| `clear()`             | Clears all elements                      | `list.clear();`             |
+| `isEmpty()`           | Checks if list is empty                  | `list.isEmpty();`           |
+| `set(int index, E e)` | Replaces element at index                | `list.set(1, "Z");`         |
+
+## example program 
+```java
+import java.util.LinkedList;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>();
+
+        // Adding elements
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+        list.add(1, "Blueberry"); // Insert at index 1
+
+        // Stack-like operation
+        list.push("Start"); // Adds at front
+        String popped = list.pop(); // Removes "Start"
+
+        // Accessing elements
+        System.out.println("Element at index 2: " + list.get(2));
+        
+        // Removing elements
+        list.remove("Banana"); // Remove by value
+        list.remove(1);        // Remove by index
+
+        // Modifying elements
+        list.set(1, "Dragonfruit");
+
+        // Loop through the list
+        System.out.println("Current List:");
+        for (String fruit : list) {
+            System.out.println(fruit);
+        }
+
+        // Check size and empty
+        System.out.println("Size: " + list.size());
+        System.out.println("Is empty? " + list.isEmpty());
+
+        // Clear the list
+        list.clear();
+        System.out.println("List after clearing: " + list);
+    }
+}
+```
+## output 
+```java
+Element at index 2: Cherry
+Current List:
+Apple
+Dragonfruit
+Cherry
+Size: 3
+Is empty? false
+List after clearing: []
+```
+## Notes
+- `push()` and `pop()` mimic Stack behavior.
+
+- `LinkedList` is not synchronized; use `Collections.synchronizedList()` for thread safety.
+
+- Best suited when frequent insertions/deletions are needed (vs `ArrayList` for random access).
+
