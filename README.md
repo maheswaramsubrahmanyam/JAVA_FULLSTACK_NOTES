@@ -1383,3 +1383,70 @@ List after clearing: []
 
 - Best suited when frequent insertions/deletions are needed (vs `ArrayList` for random access).
 
+
+# Key Differences Between Set and List
+| Feature          | **List**                                      | **Set**                               |
+| ---------------- | --------------------------------------------- | ------------------------------------- |
+| **Duplicates**   | Allows duplicate elements                     | **Does not** allow duplicate elements |
+| **Order**        | Maintains insertion order (e.g., `ArrayList`) | No guaranteed order (e.g., `HashSet`) |
+| **Indexing**     | Supports indexing (get element by index)      | No indexing support                   |
+| **Null values**  | Can contain multiple nulls                    | Only one null allowed (in `HashSet`)  |
+| **Common Types** | `ArrayList`, `LinkedList`                     | `HashSet`, `LinkedHashSet`, `TreeSet` |
+
+
+## Example Code
+### List Example (ArrayList)
+
+```java
+import java.util.*;
+
+public class ListExample {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("apple");
+        list.add("banana");
+        list.add("apple");  // duplicate allowed
+
+        System.out.println(list);  // Output: [apple, banana, apple]
+        System.out.println(list.get(1));  // Output: banana
+    }
+}
+```
+# Set Example (HashSet)
+```java
+import java.util.*;
+
+public class SetExample {
+    public static void main(String[] args) {
+        Set<String> set = new HashSet<>();
+        set.add("apple");
+        set.add("banana");
+        set.add("apple");  // duplicate ignored
+
+        System.out.println(set);  // Output might be [banana, apple]
+    }
+}
+
+```
+# When to Use
+| Use Case                           | Prefer **List**  | Prefer **Set**                           |
+| ---------------------------------- | ---------------  | --------------------------------------   |
+| Maintain element **order**         | yes              |  (unless using `LinkedHashSet`)          |
+| Allow **duplicates**               | yes              | No                                       |
+| Need **index-based access**        | yes              | No                                       |
+| Need **fast lookup/no duplicates** | No               | yes (`HashSet` offers fast `contains()`) |
+
+# Common Methods in HashSet
+| Method               | Description                           |
+| -------------------- | ------------------------------------- |
+| `add(E e)`           | Adds element if not already present   |
+| `remove(Object o)`   | Removes the specified element         |
+| `contains(Object o)` | Checks if the element exists          |
+| `isEmpty()`          | Checks if the set is empty            |
+| `size()`             | Returns the number of elements        |
+| `clear()`            | Removes all elements                  |
+| `iterator()`         | Returns an iterator over the elements |
+
+
+
+
