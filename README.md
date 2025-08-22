@@ -1449,4 +1449,35 @@ public class SetExample {
 
 
 
+---
+
+```java
+// character methods 
+		char c1 = 'A';
+		
+		// character.isLetter(X)
+		System.out.println(c1 + " is Letter? " + Character.isLetter(c1));
+		
+		//character.isDigit(X)
+		char c2 = '9';
+		System.out.println(c2 + " is Letter? " + Character.isDigit(c2));
+		
+		// character.isWhitespace(X)
+		char c3 = ' ';
+		System.out.println(c3 + " is Letter? " + Character.isWhitespace(c3));
+
+        char c4 = 'a';
+		
+		// character.isLowerCase(X)
+		System.out.println(c4 + " is Letter? " + Character.isLowerCase(c4));
+		
+        char c5 = 'A';
+		
+		// character.isUpperCase(X)
+		System.out.println(c5 + " is Letter? " + Character.isUpperCase(c5));
+		
+
+```
+
+
 
