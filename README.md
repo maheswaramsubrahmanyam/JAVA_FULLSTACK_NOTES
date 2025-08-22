@@ -1,4 +1,4 @@
-# JAVA_FULLSTACK_NOTES
+#  JAVA_FULLSTACK_NOTES
 
 src <br>
 new  <br>
@@ -11,7 +11,7 @@ objects stored in heap area initization of objects   <br>
 2.	using constructor 
 3.	using setters method 
  <br>
-using reference variable
+- using reference variable
 
 ```java
 //CUSTOMER.java
