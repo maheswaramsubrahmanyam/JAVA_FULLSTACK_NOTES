@@ -1475,7 +1475,6 @@ public class SetExample {
 		
 		// character.isUpperCase(X)
 		System.out.println(c5 + " is Letter? " + Character.isUpperCase(c5));
-		
 
 ```
 
